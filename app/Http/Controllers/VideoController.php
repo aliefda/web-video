@@ -54,7 +54,7 @@ class VideoController extends Controller
 
         $video->save();
 
-        return redirect('/videos')->with('success', 'Video berhasil diupload!');
+        return redirect('/user/videos')->with('success', 'Video berhasil diupload!');
     }
 
     /**
@@ -99,7 +99,7 @@ class VideoController extends Controller
     
         $video->save();
 
-        return redirect('/videos')->with('success', 'Video berhasil diupload!');
+        return redirect('/user/videos')->with('success', 'Video berhasil diupload!');
     }
 
     /**
@@ -109,6 +109,6 @@ class VideoController extends Controller
     {
         $video->delete();
 
-        return redirect('/videos')->with('message', 'Data Berhasil Dihapus');
+        return redirect('/user/videos')->with('message', 'Data Berhasil Dihapus');
     }
 }
